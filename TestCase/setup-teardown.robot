@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary    
 Resource    ../PageObjects/login_page.robot
 
 
@@ -17,7 +17,7 @@ open and login
 close browser
     SeleniumLibrary.Close Browser
  
-refresh
+refresh browser
     SeleniumLibrary.Execute Javascript    window.location.reload();
     
     
